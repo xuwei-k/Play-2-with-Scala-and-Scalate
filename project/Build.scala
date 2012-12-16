@@ -9,8 +9,8 @@ object ApplicationBuild extends Build {
 
   val appDependencies = Seq(
     "org.fusesource.scalate" % "scalate-core" % "1.5.3",
-    "com.mongodb.casbah" %% "casbah" % "2.1.5-1",
-    "com.novus" %% "salat-core" % "0.0.8-SNAPSHOT",
+    //"com.mongodb.casbah" %% "casbah" % "2.1.5-1",
+    "se.radley" %% "play-plugins-salat" % "1.1",
     "org.mockito" % "mockito-all" % "1.9.0"
   )
 
