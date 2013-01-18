@@ -20,8 +20,8 @@ object Scalate {
     val engine = new TemplateEngine
     engine.resourceLoader = new FileResourceLoader(Some(Play.getFile("app/views")))
     engine.layoutStrategy = new DefaultLayoutStrategy(engine, "app/views/layouts/default." + format)
-    engine.classpath = "tmp/classes"
-    engine.workingDirectory = Play.getFile("tmp")
+    engine.classpath = "targert/classes"
+    engine.workingDirectory = Play.getFile("target")
     engine.combinedClassPath = true
     engine.classLoader = Play.classloader
     engine
